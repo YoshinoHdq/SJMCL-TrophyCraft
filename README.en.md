@@ -1,70 +1,51 @@
-# TrophyCraft - Launcher Achievement System
+<div align=center>
 
-**English** | [中文](README.md)
+# TrophyCraft
+
+Collect achievements and analyze your launcher personality 🏆
+
+**English · [简体中文](README.md)**
+
+</div>
 
 ---
 
-## About
+## 简介
 
-**TrophyCraft** is an SJMCL launcher extension that lets you collect achievements, track your launcher usage habits, and analyze your launcher personality.
-
-> All data is stored locally. No network required.
+TrophyCraft is a SJMCL extension that lets you collect achievements, track usage habits, and analyze your launcher personality. All data is stored locally, no network required.
 
 ## Features
 
-### 🏆 23 Achievements in 5 Categories
+### 🏆 23 Achievements, 5 Categories
 
-**Getting Started**: First Launch / Launcher Resident / Veteran / 3-Day Streak / Week Companion / Night Visitor / Morning Person / Triple Daily
+**Getting Started**: First Launch / Launcher Resident / Veteran / Three Days Straight / Week Buddy / Night Visitor / Early Bird / Three Times a Day
 
 **Instance Management**: Multi-Instance
 
-**Extension Collection**: Extension Explorer / Extension Collector / Detection & Sentinel
+**Extension Collection**: Extension Explorer / Extension Collector / Probe & Sentinel
 
-**Milestones**: 10 Launches / 50 Launches / 500 Launches / Week One / Full Moon / 100-Day Journal / Month Streak / Sprinter
+**Milestones**: 10 Launches / 50 Launches / 500 Launches / First Week / Full Moon / 100 Days / Monthly Full Attendance / Sprinter
 
-**Hidden Achievements**: Night Owl / Early Bird / Power User
+**Hidden Achievements**: Night Owl / Early Bird / Heavy User
 
 ### 🧠 Launcher Personality Analysis
 
-8 personality types based on your usage data:
+8 personality types based on your usage data, including Morning Sprinter, Night Owl Sprinter, Heavy Launcher User, and more.
 
-| Type | Description |
-|------|-------------|
-| 🌅 Morning Sprinter | Quick morning launches |
-| 🌄 Morning Regular | Fixed daily schedule |
-| 🦉 Night Owl Sprinter | Efficient at night |
-| 🌙 Night Owl Browser | Enjoys browsing at night |
-| ☀️ Daytime Frequent | Active throughout the day |
-| 🌆 Evening Ritual | Evening launch ritual |
-| 🔥 Power User | Opens 15+ times daily |
-| 🎯 Balanced Player | No strong preference |
+### 🎮 Minecraft-Style Popups
 
-### 🎮 Minecraft-Style Popup
-
-When unlocking achievements, a toast notification appears: dark background, golden border, golden "Achievement Get!" text.
-
-### 🐙 Open Source Contribution
-
-A GitHub card at the bottom of the achievement wall lets you quickly open the repository to submit issues or star the project.
+Achievement unlocks trigger a Minecraft-style popup with dark background and gold borders.
 
 ## Installation
 
-1. Download `org.yoshino.trophycraft.sjmclx`
-2. Drag the file into the SJMCL launcher window
-3. View the achievement card on the home page, or enter extension settings for the full achievement wall
+1. Download the .sjmclx file from Releases
+2. Open SJMCL → Settings → Extension Management → Import
+3. View achievements on the home card, or visit extension settings for the full achievement wall
 
-## Development
+## Compatibility
 
-```bash
-git clone https://github.com/YoshinoHdq/SJMCL-Trophy-Craft.git
-cd SJMCL-Trophy-Craft
-# Edit frontend/index.js, then repackage as .sjmclx
-```
-
-## Contributing
-
-Have ideas for new achievements? Feel free to open an [Issue](https://github.com/YoshinoHdq/SJMCL-Trophy-Craft/issues)!
+- Minimum launcher version: 1.1.3
 
 ## License
 
-MIT License - see the [LICENSE](LICENSE) file for details.
+MIT
