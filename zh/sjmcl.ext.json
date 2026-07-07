@@ -1,7 +1,7 @@
 {
-  "identifier": "org.yoshino.trophycraft",
+  "identifier": "org.yoshino.trophycraft.zh",
   "name": "TrophyCraft",
-  "description": "Collect achievements and analyze your launcher usage personality",
+  "description": "在启动器中收集成就，分析你的启动器使用人格",
   "author": "hemekewayoshino",
   "version": "0.1.0",
   "minimalLauncherVersion": "1.1.3",

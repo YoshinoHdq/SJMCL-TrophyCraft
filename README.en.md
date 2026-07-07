@@ -2,7 +2,7 @@
 
 # TrophyCraft
 
-Collect achievements and analyze your launcher personality 🏆
+Collect achievements and analyze your launcher usage personality 🏆
 
 **English · [简体中文](README.md)**
 
@@ -13,6 +13,10 @@ Collect achievements and analyze your launcher personality 🏆
 ## 简介
 
 TrophyCraft is a SJMCL extension that lets you collect achievements, track usage habits, and analyze your launcher personality. All data is stored locally, no network required.
+
+Two versions available:
+- **English** (org.yoshino.trophycraft)
+- **中文版** (org.yoshino.trophycraft.zh)
 
 ## Features
 
@@ -30,7 +34,7 @@ TrophyCraft is a SJMCL extension that lets you collect achievements, track usage
 
 ### 🧠 Launcher Personality Analysis
 
-8 personality types based on your usage data, including Morning Sprinter, Night Owl Sprinter, Heavy Launcher User, and more.
+8 personality types based on your usage data.
 
 ### 🎮 Minecraft-Style Popups
 

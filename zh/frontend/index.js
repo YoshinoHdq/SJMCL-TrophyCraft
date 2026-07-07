@@ -16,49 +16,49 @@
     // Emoji constants
     var E = {
       gp: "\u{1F3AE}", bus: "\u{1F68C}", nb: "\u{1F4D4}",
-      sw: "⚔️", ca: "\u{1F4C5}", st: "\u{1F31F}",
+      sw: "\u2694\uFE0F", ca: "\u{1F4C5}", st: "\u{1F31F}",
       lt: "\u{1F4BB}",
       tr: "\u{1F3C6}", gb: "\u{1F30D}",
       pz: "\u{1F9F0}", rb: "\u{1F916}", kc: "\u{1F51F}",
       fr: "\u{1F525}", da: "\u{1F3AF}", ho: "\u{1F3E0}",
       mn: "\u{1F315}", sc: "\u{1F4DC}", cr: "\u{1F319}",
       su: "\u{1F305}", ms: "\u{1F4AA}", lk: "\u{1F512}",
-      ck: "✓", qu: "\u{2753}", ct: "\u{1F431}",
+      ck: "\u2713", qu: "\u{2753}", ct: "\u{1F431}",
       hp: "\u{1F3A7}"
     };
 
     var categories = [
-      ["b", "Beginner", E.ct],
-      ["ins", "Instance Manager", E.lt],
-      ["e", "Extension Collector", E.pz],
-      ["m", "Milestones", E.da],
-      ["h", "Hidden Achievements", "Ⓜ"]
+      ["b", "\u65B0\u624B\u5165\u95E8", E.ct],
+      ["ins", "\u5B9E\u4F8B\u7BA1\u7406", E.lt],
+      ["e", "\u6269\u5C55\u6536\u96C6", E.pz],
+      ["m", "\u91CC\u7A0B\u7891", E.da],
+      ["h", "\u9690\u85CF\u6210\u5C31", "\u24C2"]
     ];
     var catMap = {};
     for (var ci = 0; ci < categories.length; ci++) { catMap[categories[ci][0]] = categories[ci]; }
 
     var achievements = [
-      ["f","b","First Launch",E.bus,"First Minecraft Launch","Launch Any Instance","blue",false,1],
-      ["r","b","Launcher Resident",E.nb,"Used Over 30 Days","Cumulative 30 Days","teal",false,30],
-      ["v","b","Veteran",E.sw,"Cumulative 100 Launches","Cumulative 100","yellow",false,100],
-      ["s3","b","Three Days Streak",E.ca,"Open Launcher 3 Days in a Row","Login 3 Days in a Row","green",false,3],
-      ["s7","b","Week Companion",E.st,"Open Launcher 7 Days in a Row","Login 7 Days in a Row","purple",false,7],
-      ["nighthawk","b","Night Visitor",E.cr,"Open ≥10 Times at 0-3 AM","Night Walker","purple",false,10],
-      ["morning","b","Morning Person",E.su,"Open ≥10 Times at 6-9 AM","Morning Walker","orange",false,10],
-      ["triple","b","Triple Daily",E.rc,"Open ≥3 Times/Day for 5 Days","Frequent User","teal",false,5],      ["mi","ins","Multi-Instance",E.lt,"Install Over 3 Instances","At Least 3 Instances","cyan",false,3],
-      ["ext3","e","Extension Explorer",E.pz,"Install 3 Extensions","Install 3 Extensions","teal",false,3],
-      ["ext10","e","Extension Collector",E.pz,"Install 10 Extensions","Install 10 Extensions","purple",false,10],
-      ["ext_lp","e","Probe & Sentinel",E.rb,"Install Both Log Probe & Server Sentinel","Specific Extensions Detected","cyan",false,1],
-      ["t10","m","Ten Launches",E.kc,"Cumulative 10 Launches","Cumulative 10","green",false,10],
-      ["t50","m","Fifty Launches",E.fr,"Cumulative 50 Launches","Cumulative 50","orange",false,50],
-      ["t500","m","500 Launches",E.da,"Cumulative 500 Launches","Cumulative 500","red",false,500],
-      ["streak30","m","Monthly Perfect Attendance",E.ca,"Login ≥30 Days Streak","Streak Login","green",false,30],
-      ["sprinter","m","Sprint King",E.rn,"Launch ≥15 Times a Day","Speed Demon","red",false,15],      ["d7","m","Week One",E.ho,"Used Launcher for 7 Days","Cumulative 7 Days","green",false,7],
-      ["d30","m","Full Moon",E.mn,"Used Launcher for 30 Days","Cumulative 30 Days","blue",false,30],
-      ["d100","m","100-Day Diary",E.sc,"Used Launcher for 100 Days","Cumulative 100 Days","yellow",false,100],
-      ["nm","h","Night Owl",E.cr,"Launch Game 5 Times at 0-5 AM","Nocturnal","purple",false,5],
-      ["em","h","Early Bird",E.su,"Launch Game 5 Times at 5-8 AM","Morning Walker","orange",false,5],
-      ["mt10","h","Heavy User",E.ms,"Launch Over 10 Times a Day","10+ Times Daily","red",false,10],
+      ["f","b","\u521D\u6B21\u542F\u7A0B",E.bus,"\u9996\u6B21\u542F\u52A8Minecraft","\u542F\u52A8\u4EFB\u610F\u6E38\u620F\u5B9E\u4F8B","blue",false,1],
+      ["r","b","\u542F\u52A8\u5668\u5C45\u6C11",E.nb,"\u4F7F\u7528\u8D85\u8FC730\u5929","\u7D2F\u8BA1\u4F7F\u752830\u5929","teal",false,30],
+      ["v","b","\u767E\u6218\u8001\u5175",E.sw,"\u7D2F\u8BA1\u542F\u52A8100\u6B21","\u7D2F\u8BA1100\u6B21","yellow",false,100],
+      ["s3","b","\u8FDE\u7EED\u4E09\u65E5",E.ca,"\u8FDE\u7EED3\u5929\u6253\u5F00\u542F\u52A8\u5668","\u8FDE\u7EED\u767B\u5F553\u5929","green",false,3],
+      ["s7","b","\u4E00\u5468\u4F19\u4F34",E.st,"\u8FDE\u7EED7\u5929\u6253\u5F00\u542F\u52A8\u5668","\u8FDE\u7EED\u767B\u5F557\u5929","purple",false,7],
+      ["nighthawk","b","\u6DF1\u591C\u8BBF\u5BA2",E.cr,"\u51CC\u66680-3\u70B9\u6253\u5F00\u226510\u6B21","\u6DF1\u591C\u884C\u8005","purple",false,10],
+      ["morning","b","\u6668\u578B\u4EBA",E.su,"\u65E9\u66686-9\u70B9\u6253\u5F00\u226510\u6B21","\u6668\u95F4\u884C\u8005","orange",false,10],
+      ["triple","b","\u4E00\u65E5\u4E09\u56DE",E.rc,"\u5355\u65E5\u6253\u5F00\u22653\u6B21\u8FBE5\u5929","\u9891\u7E41\u7528\u6237","teal",false,5],      ["mi","ins","\u591A\u5B9E\u4F8B",E.lt,"\u5B89\u88C5\u8D85\u8FC73\u4E2A\u6E38\u620F\u5B9E\u4F8B","\u81F3\u5C113\u4E2A\u5B9E\u4F8B","cyan",false,3],
+      ["ext3","e","\u6269\u5C55\u521D\u63A2",E.pz,"\u5B89\u88C53\u4E2A\u6269\u5C55","\u5B89\u88C53\u4E2A\u6269\u5C55","teal",false,3],
+      ["ext10","e","\u6269\u5C55\u6536\u96C6\u8005",E.pz,"\u5B89\u88C510\u4E2A\u6269\u5C55","\u5B89\u88C510\u4E2A\u6269\u5C55","purple",false,10],
+      ["ext_lp","e","\u63A2\u6D4B\u4E0E\u54E8\u5175",E.rb,"\u540C\u65F6\u5B89\u88C5 Log Probe \u548C Server Sentinel","\u68C0\u6D4B\u5230\u7279\u5B9A\u6269\u5C55","cyan",false,1],
+      ["t10","m","\u5341\u6B21\u542F\u7A0B",E.kc,"\u7D2F\u8BA1\u542F\u52A810\u6B21","\u7D2F\u8BA110\u6B21","green",false,10],
+      ["t50","m","\u4E94\u5341\u6B21\u542F\u7A0B",E.fr,"\u7D2F\u8BA1\u542F\u52A850\u6B21","\u7D2F\u8BA150\u6B21","orange",false,50],
+      ["t500","m","\u4E94\u767E\u6B21\u542F\u7A0B",E.da,"\u7D2F\u8BA1\u542F\u52A8500\u6B21","\u7D2F\u8BA1500\u6B21","red",false,500],
+      ["streak30","m","\u6708\u5EA6\u5168\u52E4",E.ca,"\u8FDE\u7EED\u767B\u5F55\u226530\u5929","\u8FDE\u7EED\u767B\u5F55","green",false,30],
+      ["sprinter","m","\u51B2\u523A\u738B",E.rn,"\u5355\u65E5\u542F\u52A8\u226515\u6B21","\u6781\u901F\u7528\u6237","red",false,15],      ["d7","m","\u4E00\u5468\u76EE",E.ho,"\u4F7F\u7528\u542F\u52A8\u5668\u6EE17\u5929","\u7D2F\u8BA17\u5929","green",false,7],
+      ["d30","m","\u6EE1\u6708",E.mn,"\u4F7F\u7528\u542F\u52A8\u5668\u6EE130\u5929","\u7D2F\u8BA130\u5929","blue",false,30],
+      ["d100","m","\u767E\u65E5\u8BB0",E.sc,"\u4F7F\u7528\u542F\u52A8\u5668\u6EE1100\u5929","\u7D2F\u8BA1100\u5929","yellow",false,100],
+      ["nm","h","\u591C\u732B\u5B50",E.cr,"\u5728\u51CC\u66680-5\u70B9\u542F\u52A8\u6E38\u620F5\u6B21","\u591C\u884C\u751F\u7269","purple",false,5],
+      ["em","h","\u65E9\u8D77\u7684\u5C0F\u9E1F",E.su,"\u5728\u6E05\u66685-8\u70B9\u542F\u52A8\u6E38\u620F5\u6B21","\u6668\u95F4\u884C\u8005","orange",false,5],
+      ["mt10","h","\u91CD\u5EA6\u4F7F\u7528\u8005",E.ms,"\u5355\u65E5\u542F\u52A8\u8D85\u8FC710\u6B21","\u5355\u65E510\u6B21\u4EE5\u4E0A","red",false,10],
     ];
     var AK = [];
     for (var ai = 0; ai < achievements.length; ai++) { AK.push(achievements[ai][0]); }
@@ -163,14 +163,14 @@
     function cu(a) { var n = 0; for (var k in a) { if (a[k] && a[k].u) n++; } return n; }
 
     var PERSONALITY = [
-      { k: "morning_sprinter", l: "Morning Sprinter", e: "🌅", d: "You open the launcher in the morning and jump straight into the game. Efficient and decisive." },
-      { k: "morning_regular", l: "Morning Regular", e: "🌄", d: "A classic morning player who opens the launcher at the same time every day. Discipline defines you." },
-      { k: "night_owl", l: "Night Sprinter", e: "🦆", d: "Late night is your domain. One click and the game is running. Efficiency peaks after dark." },
-      { k: "night_browser", l: "Night Browser", e: "🌙", d: "Opening the launcher at night, browsing mod stores and update logs—the journey is the reward." },
-      { k: "day_frequent", l: "Daytime High-Frequency", e: "☀️", d: "Daytime is your peak. High frequency—during breaks, lunchtime, any spare moment." },
-      { k: "evening_ritual", l: "Dusk Ritualist", e: "🌆", d: "At dusk, with the day behind you, opening the launcher is your ritual. A player of consistency." },
-      { k: "power_user", l: "Launcher Maniac", e: "🔥", d: "You open the launcher a dozen times a day! Not always to play—it is like a second desktop." },
-      { k: "balanced", l: "Balanced Player", e: "🎯", d: "Your usage has no clear pattern—you appear at any time. A free-spirited player." }
+      { k: "morning_sprinter", l: "\u6668\u95F4\u51B2\u523A\u578B", e: "\uD83C\uDF05", d: "\u4F60\u4E60\u60EF\u5728\u65E9\u6668\u6253\u5F00\u542F\u52A8\u5668\uFF0C\u7136\u540E\u8FC5\u901F\u8FDB\u5165\u6E38\u620F\u3002\u52A8\u4F5C\u5E72\u8106\uFF0C\u4E0D\u62D6\u6CE5\u5E26\u6C34\u3002" },
+      { k: "morning_regular", l: "\u6668\u95F4\u89C4\u5F8B\u578B", e: "\uD83C\uDF04", d: "\u4F60\u662F\u5178\u578B\u7684\u6668\u95F4\u73A9\u5BB6\uFF0C\u6BCF\u5929\u56FA\u5B9A\u65F6\u95F4\u6253\u5F00\u542F\u52A8\u5668\uFF0C\u98CE\u96E8\u65E0\u963B\u3002\u81EA\u5F8B\u5C31\u662F\u4F60\u7684\u4EE3\u540D\u8BCD\u3002" },
+      { k: "night_owl", l: "\u591C\u732B\u51B2\u523A\u578B", e: "\uD83E\uDD86", d: "\u6DF1\u591C\u624D\u662F\u4F60\u7684\u4E3B\u573A\u3002\u542F\u52A8\u4E00\u5F00\uFF0C\u6E38\u620F\u79D2\u8FDB\u3002\u591C\u665A\u7684\u6548\u7387\u603B\u662F\u7279\u522B\u9AD8\u3002" },
+      { k: "night_browser", l: "\u591C\u732B\u95F2\u901B\u578B", e: "\uD83C\uDF19", d: "\u6DF1\u591C\u6253\u5F00\u542F\u52A8\u5668\uFF0C\u901B\u901B\u6A21\u7EC4\u5546\u5E97\u3001\u770B\u770B\u66F4\u65B0\u65E5\u5FD7\uFF0C\u53EF\u80FD\u6700\u540E\u4E5F\u6CA1\u542F\u52A8\u6E38\u620F\u2014\u2014\u8FC7\u7A0B\u624D\u662F\u4EAB\u53D7\u3002" },
+      { k: "day_frequent", l: "\u65E5\u5149\u9AD8\u9891\u578B", e: "\u2600\uFE0F", d: "\u767D\u5929\u662F\u4F60\u6700\u6D3B\u8DC3\u7684\u65F6\u6BB5\uFF0C\u6253\u5F00\u9891\u7387\u9AD8\u3002\u5DE5\u4F5C\u95F4\u9699\u3001\u5348\u4F11\u65F6\u95F4\uFF0C\u968F\u65F6\u6478\u4E00\u628A\u3002" },
+      { k: "evening_ritual", l: "\u9EC4\u660F\u4EEA\u5F0F\u578B", e: "\uD83C\uDF06", d: "\u508D\u665A\u65F6\u5206\uFF0C\u7ED3\u675F\u4E86\u4E00\u5929\u7684\u4E8B\u60C5\uFF0C\u6253\u5F00\u542F\u52A8\u5668\u662F\u4F60\u7684\u56FA\u5B9A\u4EEA\u5F0F\u3002\u6709\u59CB\u6709\u7EC8\u7684\u73A9\u5BB6\u3002" },
+      { k: "power_user", l: "\u91CD\u5EA6\u542F\u52A8\u5668\u63A7", e: "\uD83D\uDD25", d: "\u4F60\u4E00\u5929\u80FD\u6253\u5F00\u542F\u52A8\u5668\u5341\u51E0\u4E8C\u5341\u6B21\uFF01\u867D\u7136\u4E0D\u4E00\u5B9A\u6BCF\u6B21\u90FD\u542F\u52A8\u6E38\u620F\uFF0C\u4F46\u542F\u52A8\u5668\u672C\u8EAB\u5C31\u50CF\u4F60\u7684\u7B2C\u4E8C\u4E2A\u684C\u9762\u3002" },
+      { k: "balanced", l: "\u5747\u8861\u578B\u73A9\u5BB6", e: "\uD83C\uDFAF", d: "\u4F60\u7684\u4F7F\u7528\u4E60\u60EF\u6CA1\u6709\u660E\u663E\u7684\u504F\u5411\uFF0C\u5404\u4E2A\u65F6\u95F4\u6BB5\u90FD\u53EF\u80FD\u6709\u4F60\u7684\u8EAB\u5F71\u3002\u968F\u6027\u800C\u81EA\u7531\u7684\u73A9\u5BB6\u3002" }
     ];
     function analyzePersonality(meta) {
       if (!meta || !meta.dl) return PERSONALITY[7];
@@ -178,7 +178,7 @@
       for (var d in dl) { if (dl[d] && dl[d].fo) { var h = new Date(dl[d].fo).getHours(); hc[h] = (hc[h] || 0) + 1; } }
       var n=0,m=0,da=0,e=0;
       for (var h=0;h<24;h++) { var c = hc[h]||0; if (h>=0&&h<5) n+=c; else if (h>=5&&h<8) m+=c; else if (h>=8&&h<18) da+=c; else e+=c; }
-      var ps = [{i:0,l:"Late Night",c:n},{i:1,l:"Morning",c:m},{i:2,l:"Daytime",c:da},{i:3,l:"Evening",c:e}];
+      var ps = [{i:0,l:"\u51CC\u6668",c:n},{i:1,l:"\u65E9\u6668",c:m},{i:2,l:"\u767D\u5929",c:da},{i:3,l:"\u508D\u665A",c:e}];
       ps.sort(function(a,b){return b.c-a.c});
       var peakIdx = ps[0].i;
       var days = meta.fs ? Math.round((Date.now()-Date.parse(meta.fs))/86400000)+1 : 0;
@@ -258,7 +258,7 @@
                         fontSize: "lg", flexShrink: 0
                       }, ad[3]),
                       React.createElement(VStack, { spacing: 0, align: "start" },
-                        React.createElement(Text, { fontSize: "10px", color: "#FFD700", fontWeight: "bold", textTransform: "uppercase", letterSpacing: "0.5px" }, "Achievement Unlocked!"),
+                        React.createElement(Text, { fontSize: "10px", color: "#FFD700", fontWeight: "bold", textTransform: "uppercase", letterSpacing: "0.5px" }, "\u83B7\u5F97\u6210\u5C31!"),
                         React.createElement(Text, { fontSize: "14px", fontWeight: "bold", color: "white", lineHeight: 1.3 }, ad[2])
                       )
                     )
@@ -280,7 +280,7 @@
       if (!st) {
         return React.createElement(VStack, { p: 4, spacing: 3, align: "center" },
           React.createElement(Box, { w: 10, h: 10, borderRadius: "lg", bg: "gray.700", sx: { animation: "achPulse 2s infinite" } }),
-          React.createElement(Text, { fontSize: "sm", color: "gray.500" }, "Loading...")
+          React.createElement(Text, { fontSize: "sm", color: "gray.500" }, "\u52A0\u8F7D\u4E2D...")
         );
       }
 
@@ -312,9 +312,9 @@
             sx: { animation: "achGlow 3s ease-in-out infinite" }
           }, E.gp),
           React.createElement(VStack, { spacing: 0, align: "start" },
-            React.createElement(Text, { fontWeight: "bold", fontSize: "sm", color: "white", lineHeight: 1.2 }, "Achievement System"),
+            React.createElement(Text, { fontWeight: "bold", fontSize: "sm", color: "white", lineHeight: 1.2 }, "\u6210\u5C31\u7CFB\u7EDF"),
             React.createElement(Text, { fontSize: "xs", color: pct >= 100 ? "yellow.400" : "gray.400" },
-              pct >= 100 ? "★ All Collected! ★" : st.ul + "/" + st.tt + " achievements"
+              pct >= 100 ? "\u2605 \u5168\u90E8\u6536\u96C6! \u2605" : st.ul + "/" + st.tt + " \u4E2A\u6210\u5C31"
             )
           ),
           React.createElement(Spacer),
@@ -343,11 +343,11 @@
           st.recent
             ? React.createElement(React.Fragment, null,
                 React.createElement(Text, { fontSize: "xs", color: "yellow.400", mr: 1 }, E.tr),
-                React.createElement(Text, { fontSize: "xs", color: "gray.400", flex: 1, isTruncated: true }, "Recent: " + st.recent[2])
+                React.createElement(Text, { fontSize: "xs", color: "gray.400", flex: 1, isTruncated: true }, "\u6700\u8FD1: " + st.recent[2])
               )
-            : React.createElement(Text, { fontSize: "xs", color: "gray.500" }, "No unlocked records yet"),
+            : React.createElement(Text, { fontSize: "xs", color: "gray.500" }, "\u6682\u65E0\u89E3\u9501\u8BB0\u5F55"),
           React.createElement(Spacer),
-          React.createElement(Button, { size: "xs", variant: "ghost", colorScheme: "purple", zIndex: 1, position: "relative", onClick: function() { try { host.actions.openWindow("/standalone/extension/" + api.identifier + "/achievements", "Achievement Wall"); } catch(e) {} } }, "Achievement Wall")
+          React.createElement(Button, { size: "xs", variant: "ghost", colorScheme: "purple", zIndex: 1, position: "relative", onClick: function() { try { host.actions.openWindow("/standalone/extension/" + api.identifier + "/achievements", "\u6210\u5C31\u5899"); } catch(e) {} } }, "\u6210\u5C31\u5899")
         )
       );
     };
@@ -376,7 +376,7 @@
             React.createElement(VStack, { spacing: 0, flex: 1, align: "start" },
               React.createElement(Text, { fontWeight: "bold", fontSize: "sm" }, ad[7] && !isUnlocked ? "???" : ad[2]),
               React.createElement(Text, { fontSize: "xs", color: isUnlocked ? "gray.400" : "gray.500" },
-                ad[7] && !isUnlocked ? "Hidden Achievements" : ad[4]
+                ad[7] && !isUnlocked ? "\u9690\u85CF\u6210\u5C31" : ad[4]
               )
             ),
             isUnlocked
@@ -401,7 +401,7 @@
 
       if (!st) {
         return React.createElement(Flex, { w: "100%", h: "100vh", align: "center", justify: "center" },
-          React.createElement(Text, { fontSize: "lg", color: "gray.500" }, "Loading...")
+          React.createElement(Text, { fontSize: "lg", color: "gray.500" }, "\u52A0\u8F7D\u4E2D...")
         );
       }
 
@@ -429,60 +429,60 @@
           },
             React.createElement(VStack, { spacing: 4, align: "stretch" },
               React.createElement(HStack, { justify: "space-between", align: "center" },
-                React.createElement(Heading, { size: "md" }, "Your Launcher Personality"),
+                React.createElement(Heading, { size: "md" }, "\u4F60\u7684\u542F\u52A8\u5668\u4EBA\u683C"),
                 React.createElement(Button, { size: "xs", variant: "ghost", colorScheme: "gray",
                   onClick: function() { setShowReport(false); }
-                }, "Close")
+                }, "\u5173\u95ED")
               ),
               React.createElement(HStack, { spacing: 4, align: "center" },
                 React.createElement(Text, { fontSize: "5xl" }, p.e),
                 React.createElement(VStack, { spacing: 0, align: "start" },
-                  React.createElement(Text, { fontSize: "sm", color: "gray.400" }, "You are "),
+                  React.createElement(Text, { fontSize: "sm", color: "gray.400" }, "\u4F60\u662F"),
                   React.createElement(Text, { fontSize: "2xl", fontWeight: "bold", color: "white" }, p.l)
                 )
               ),
               React.createElement(Divider, { borderColor: "gray.600" }),
               React.createElement(SimpleGrid, { columns: 2, spacing: 3 },
                 React.createElement(VStack, { spacing: 0, align: "start", p: 2, bg: "gray.750", borderRadius: "md" },
-                  React.createElement(Text, { fontSize: "2xs", color: "gray.500" }, "Used Total: "),
+                  React.createElement(Text, { fontSize: "2xs", color: "gray.500" }, "\u7D2F\u8BA1\u4F7F\u7528"),
                   React.createElement(Text, { fontSize: "lg", fontWeight: "bold", color: "white" },
                     metaRR.fs ? Math.round((Date.now()-Date.parse(metaRR.fs))/86400000)+1 : 0),
-                  React.createElement(Text, { fontSize: "2xs", color: "gray.500" }, " days")
+                  React.createElement(Text, { fontSize: "2xs", color: "gray.500" }, "\u5929")
                 ),
                 React.createElement(VStack, { spacing: 0, align: "start", p: 2, bg: "gray.750", borderRadius: "md" },
-                  React.createElement(Text, { fontSize: "2xs", color: "gray.500" }, "Total Launches: "),
+                  React.createElement(Text, { fontSize: "2xs", color: "gray.500" }, "\u7D2F\u8BA1\u542F\u52A8"),
                   React.createElement(Text, { fontSize: "lg", fontWeight: "bold", color: "white" }, metaRR.ts || 0),
-                  React.createElement(Text, { fontSize: "2xs", color: "gray.500" }, " times")
+                  React.createElement(Text, { fontSize: "2xs", color: "gray.500" }, "\u6B21")
                 ),
                 React.createElement(VStack, { spacing: 0, align: "start", p: 2, bg: "gray.750", borderRadius: "md" },
-                  React.createElement(Text, { fontSize: "2xs", color: "gray.500" }, "Longest Streak: "),
+                  React.createElement(Text, { fontSize: "2xs", color: "gray.500" }, "\u6700\u957F\u8FDE\u7EED"),
                   React.createElement(Text, { fontSize: "lg", fontWeight: "bold", color: "white" }, metaRR.bestCd || 0),
-                  React.createElement(Text, { fontSize: "2xs", color: "gray.500" }, " days")
+                  React.createElement(Text, { fontSize: "2xs", color: "gray.500" }, "\u5929")
                 ),
                 React.createElement(VStack, { spacing: 0, align: "start", p: 2, bg: "gray.750", borderRadius: "md" },
-                  React.createElement(Text, { fontSize: "2xs", color: "gray.500" }, "Daily Peak: "),
+                  React.createElement(Text, { fontSize: "2xs", color: "gray.500" }, "\u5355\u65E5\u6700\u9AD8"),
                   React.createElement(Text, { fontSize: "lg", fontWeight: "bold", color: "white" }, metaRR.mdo || 0),
-                  React.createElement(Text, { fontSize: "2xs", color: "gray.500" }, " times")
+                  React.createElement(Text, { fontSize: "2xs", color: "gray.500" }, "\u6B21")
                 ),
                 React.createElement(VStack, { spacing: 0, align: "start", p: 2, bg: "gray.750", borderRadius: "md" },
-                  React.createElement(Text, { fontSize: "2xs", color: "gray.500" }, "Unlocked: "),
+                  React.createElement(Text, { fontSize: "2xs", color: "gray.500" }, "\u89E3\u9501\u6210\u5C31"),
                   React.createElement(Text, { fontSize: "lg", fontWeight: "bold", color: "white" }, st.ul + "/" + st.tt),
-                  React.createElement(Text, { fontSize: "2xs", color: "gray.500" }, "")
+                  React.createElement(Text, { fontSize: "2xs", color: "gray.500" }, "\u4E2A")
                 ),
                 React.createElement(VStack, { spacing: 0, align: "start", p: 2, bg: "gray.750", borderRadius: "md" },
-                  React.createElement(Text, { fontSize: "2xs", color: "gray.500" }, "Active Period: "),
+                  React.createElement(Text, { fontSize: "2xs", color: "gray.500" }, "\u5F00\u542F\u65F6\u6BB5"),
                   React.createElement(Text, { fontSize: "lg", fontWeight: "bold", color: "white" },
-                    p.k === "morning_sprinter"||p.k==="morning_regular" ? "Morning" :
-                    p.k==="night_owl"||p.k==="night_browser" ? "Late Night" :
-                    p.k==="day_frequent" ? "Daytime" :
-                    p.k==="evening_ritual" ? "Evening" : "Even"),
-                  React.createElement(Text, { fontSize: "2xs", color: "gray.500" }, "Peak")
+                    p.k === "morning_sprinter"||p.k==="morning_regular" ? "\u6668\u95F4" :
+                    p.k==="night_owl"||p.k==="night_browser" ? "\u6DF1\u591C" :
+                    p.k==="day_frequent" ? "\u767D\u5929" :
+                    p.k==="evening_ritual" ? "\u508D\u665A" : "\u5747\u5300"),
+                  React.createElement(Text, { fontSize: "2xs", color: "gray.500" }, "\u9AD8\u5CF0")
                 )
               ),
               React.createElement(Divider, { borderColor: "gray.600" }),
               React.createElement(Text, { fontSize: "sm", color: "gray.300", lineHeight: 1.6 }, p.d),
               React.createElement(Text, { fontSize: "xs", color: "gray.500", textAlign: "center" },
-                "Data from your launcher usage records. Each analysis is real-time and up-to-date."
+                "\u6570\u636E\u6765\u6E90\u4E8E\u4F60\u7684\u542F\u52A8\u5668\u4F7F\u7528\u8BB0\u5F55\u3002\u6BCF\u6B21\u5206\u6790\u5747\u4E3A\u5B9E\u65F6\u6700\u65B0\u6570\u636E\u3002"
               )
             )
           )
@@ -492,8 +492,8 @@
 return React.createElement(Box, { p: 4, w: "100%", minH: "100vh", bg: "#1A202C", color: "white", position: "relative", zIndex: 10 },
         React.createElement(VStack, { spacing: 4, align: "stretch", maxW: "800px", mx: "auto" },
           React.createElement(VStack, { spacing: 1, align: "center" },
-            React.createElement(Heading, { size: "lg" }, E.gp + " Launcher Achievements"),
-            React.createElement(Text, { fontSize: "sm", color: "gray.400" }, "Unlocked " + st.ul + "/" + st.tt + " achievements (" + pct + "%)"),
+            React.createElement(Heading, { size: "lg" }, E.gp + " \u542F\u52A8\u5668\u6210\u5C31"),
+            React.createElement(Text, { fontSize: "sm", color: "gray.400" }, "\u89E3\u9501 " + st.ul + "/" + st.tt + " \u4E2A\u6210\u5C31 (" + pct + "%)"),
             React.createElement(Box, { w: "100%", maxW: "300px", h: 2, bg: "gray.700", borderRadius: "full", overflow: "hidden" },
               React.createElement(Box, { h: "100%", bgGradient: "linear(to-r, purple.500, blue.400)", borderRadius: "full", sx: { width: pct + "%", transition: "width 0.5s" } })
             )
@@ -546,13 +546,13 @@ return React.createElement(Box, { p: 4, w: "100%", minH: "100vh", bg: "#1A202C",
                 fontSize: "md"
               }, "\u{1F50D}"),
               React.createElement(VStack, { spacing: 0, align: "start" },
-                React.createElement(Text, { fontSize: "xs", color: "gray.400", lineHeight: 1.3 }, "Analyze Your Launcher Habits"),
+                React.createElement(Text, { fontSize: "xs", color: "gray.400", lineHeight: 1.3 }, "\u5206\u6790\u4F60\u7684\u542F\u52A8\u5668\u4E60\u60EF"),
                 React.createElement(Text, { fontSize: "sm", color: "purple.300", fontWeight: "semibold", lineHeight: 1.3 },
-                  "Launcher Personality Report"
+                  "\u542F\u52A8\u5668\u4EBA\u683C\u62A5\u544A"
                 )
               ),
               React.createElement(Spacer),
-              React.createElement(Text, { fontSize: "md", color: "gray.500" }, "→")
+              React.createElement(Text, { fontSize: "md", color: "gray.500" }, "\u2192")
             )
           ),
 React.createElement(Box, {
@@ -564,16 +564,16 @@ React.createElement(Box, {
                 )
               ),
               React.createElement(VStack, { spacing: 0, align: "start" },
-                React.createElement(Text, { fontSize: "xs", color: "gray.400", lineHeight: 1.3 }, "Open Source on GitHub"),
+                React.createElement(Text, { fontSize: "xs", color: "gray.400", lineHeight: 1.3 }, "\u5F00\u6E90\u5728 GitHub"),
                 React.createElement(Text, { fontSize: "sm", color: "#58A6FF", fontWeight: "semibold", lineHeight: 1.3 },
                   "YoshinoHdq/SJMCL-Trophy-Craft"
                 )
               ),
               React.createElement(Spacer),
-              React.createElement(Text, { fontSize: "md", color: "gray.500" }, "→")
+              React.createElement(Text, { fontSize: "md", color: "gray.500" }, "\u2192")
             ),
             React.createElement(Text, { fontSize: "xs", color: "gray.500", mt: 2, pl: 0.5 },
-              "New achievement ideas? Submit an Issue on GitHub!"
+              "\u60F3\u5230\u65B0\u6210\u5C31\u7684\u70B9\u5B50\u4E86\uFF1F\u6B22\u8FCE\u6765 GitHub \u63D0 Issue"
             )
           )
         )
@@ -581,7 +581,7 @@ React.createElement(Box, {
     };
 
     return {
-      homeWidget: { title: "Launcher Achievements", defaultWidth: 360, minWidth: 280, Component: HomeWidgetComponent },
+      homeWidget: { title: "\u542F\u52A8\u5668\u6210\u5C31", defaultWidth: 360, minWidth: 280, Component: HomeWidgetComponent },
       page: { routePath: "achievements", isStandAlone: true, Component: AchievementWallPage },
       settingsPage: { Component: AchievementWallPage }
     };
