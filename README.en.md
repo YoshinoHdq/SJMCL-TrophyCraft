@@ -53,3 +53,8 @@ Achievement unlocks trigger a Minecraft-style popup with dark background and gol
 ## License
 
 MIT
+
+
+---
+
+*This plugin was developed with the assistance of AI coding tools.*
