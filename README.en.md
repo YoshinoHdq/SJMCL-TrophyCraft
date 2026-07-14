@@ -43,7 +43,7 @@ Achievement unlocks trigger a Minecraft-style popup with dark background and gol
 ## Installation
 
 1. Download the .sjmclx file from Releases
-2. Open SJMCL → Settings → Extension Management → Import
+2. Open SJMCL → Settings → Extension Management → Import. Supports file selection and drag-and-drop import
 3. View achievements on the home card, or visit extension settings for the full achievement wall
 
 ## Compatibility
