@@ -50,6 +50,11 @@ Achievement unlocks trigger a Minecraft-style popup with dark background and gol
 
 - Minimum launcher version: 1.1.3
 
+
+## Related Projects & Documentation
+
+- [SJMCL Extension Documentation](https://mc.sjtu.cn/sjmcl/dev/extension/)
+- [awesome-SJMCL-extensions](https://github.com/SJMC-Dev/awesome-SJMCL-extensions)
 ## License
 
 MIT
@@ -58,7 +63,3 @@ MIT
 ---
 
 *This plugin was developed with the assistance of AI coding tools.*
-## Related Projects & Documentation
-
-- [SJMCL Extension Documentation](https://mc.sjtu.cn/sjmcl/dev/extension/)
-- [awesome-SJMCL-extensions](https://github.com/SJMC-Dev/awesome-SJMCL-extensions)
